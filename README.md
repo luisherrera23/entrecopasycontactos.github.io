@@ -1,1 +1,143 @@
 # luisher23.github.io
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Entre Copas y Contactos — Evento de Networking</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#4f46e5;
+      --secondary:#6366f1;
+      --accent:#f59e0b;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --bg:#f9fafb;
+      --card:#ffffff;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto;
+      line-height:1.6;
+      background:var(--bg);
+      color:var(--text);
+    }
+    header{
+      background:linear-gradient(90deg,var(--primary),var(--secondary));
+      color:white;
+      padding:40px 24px;
+      text-align:center;
+    }
+    header h1{font-size:36px;margin-bottom:8px}
+    header p{font-size:18px;color:#e0e7ff}
+    .container{max-width:1100px;margin:40px auto;padding:0 24px}
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      padding:24px;
+      box-shadow:0 6px 20px rgba(0,0,0,0.08);
+      margin-bottom:28px;
+    }
+    h2,h3,h4{margin-bottom:12px;color:var(--primary)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+    .meta{background:#f3f4f6;padding:16px;border-radius:8px}
+    .btn{
+      display:inline-block;
+      background:var(--primary);
+      color:#fff;
+      padding:12px 20px;
+      border-radius:8px;
+      font-weight:600;
+      text-decoration:none;
+      transition:background .2s ease;
+    }
+    .btn:hover{background:var(--secondary)}
+    footer{
+      background:#111827;
+      color:#9ca3af;
+      text-align:center;
+      padding:24px;
+      font-size:14px;
+    }
+    ul{padding-left:18px;margin-top:6px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Entre Copas y Contactos</h1>
+    <p>Networking Profesional en un Ambiente Distendido</p>
+  </header>
+
+  <div class="container">
+    <section class="card">
+      <h2>Sobre el evento</h2>
+      <p>“Entre Copas y Contactos” es una iniciativa diseñada para transformar el networking tradicional en una experiencia más cercana, profesional y a la vez amena. Reúne a emprendedores, freelancers, startups y creativos en un entorno relajado que fomenta la colaboración y la construcción de relaciones de valor.</p>
+      <div class="grid" style="margin-top:20px">
+        <div class="meta">
+          <strong>📅 Fecha</strong>
+          <div>Jueves 19 de septiembre</div>
+        </div>
+        <div class="meta">
+          <strong>⏰ Hora</strong>
+          <div>6:00 pm – 10:00 pm</div>
+        </div>
+        <div class="meta">
+          <strong>📍 Lugar</strong>
+          <div>La Oficina Bar — Dirección por confirmar</div>
+        </div>
+        <div class="meta">
+          <strong>🎟 Entrada</strong>
+          <div>Acceso libre con promociones especiales en bebidas</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Agenda y Dinámica</h2>
+      <ul>
+        <li>Bienvenida con cóctel y acreditación de participantes.</li>
+        <li>Speed Networking: rondas rápidas de presentación profesional.</li>
+        <li>Icebreakers diseñados para facilitar conversaciones.</li>
+        <li>Mesas temáticas por sectores de interés.</li>
+        <li>Espacios libres para networking informal y alianzas estratégicas.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Beneficios</h2>
+      <div class="grid">
+        <div>
+          <h4>Para asistentes</h4>
+          <ul>
+            <li>Ampliar red de contactos de forma eficiente.</li>
+            <li>Visibilidad de proyectos y servicios.</li>
+            <li>Ambiente profesional y relajado.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Para el bar anfitrión</h4>
+          <ul>
+            <li>Aumento de flujo en horario after office.</li>
+            <li>Posicionamiento como punto de encuentro profesional.</li>
+            <li>Oportunidades de patrocinio y fidelización.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Contacto</h2>
+      <p>¿Deseas asistir, reservar espacios para tu equipo o explorar opciones de patrocinio?</p>
+      <a class="btn" href="mailto:organizador@laoficina.bar?subject=RSVP%20Entre%20Copas%20y%20Contactos">Confirma tu asistencia</a>
+      <p style="margin-top:12px;font-size:15px">Escríbenos a <a href="mailto:organizador@laoficina.bar">organizador@laoficina.bar</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Entre Copas y Contactos — Evento de Networking | La Oficina Bar</p>
+  </footer>
+</body>
+</html>
