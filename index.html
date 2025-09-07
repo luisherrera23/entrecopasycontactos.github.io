@@ -8,134 +8,131 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --primary:#4f46e5;
-      --secondary:#6366f1;
-      --accent:#f59e0b;
-      --text:#1f2937;
-      --muted:#6b7280;
-      --bg:#f9fafb;
-      --card:#ffffff;
+      --primary:#5c4033;
+      --secondary:#8b5e3c;
+      --accent:#d4a373;
+      --text:#3f3f3f;
+      --muted:#6b6b6b;
+      --bg:#f4e9dc;
+      --card:#fffaf3;
     }
     *{box-sizing:border-box;margin:0;padding:0}
-    body{
-      font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto;
-      line-height:1.6;
-      background:var(--bg);
-      color:var(--text);
-    }
-    header{
-      background:linear-gradient(90deg,var(--primary),var(--secondary));
-      color:white;
-      padding:40px 24px;
-      text-align:center;
-    }
-    header img{
-      max-width:140px;
-      margin-bottom:16px;
-    }
-    header h1{font-size:36px;margin-bottom:8px}
-    header p{font-size:18px;color:#e0e7ff}
-    .container{max-width:1100px;margin:40px auto;padding:0 24px}
-    .card{
-      background:var(--card);
-      border-radius:12px;
-      padding:24px;
-      box-shadow:0 6px 20px rgba(0,0,0,0.08);
-      margin-bottom:28px;
-    }
-    h2,h3,h4{margin-bottom:12px;color:var(--primary)}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
-    .meta{background:#f3f4f6;padding:16px;border-radius:8px}
-    .btn{
-      display:inline-block;
-      background:var(--primary);
-      color:#fff;
-      padding:12px 20px;
-      border-radius:8px;
-      font-weight:600;
-      text-decoration:none;
-      transition:background .2s ease;
-    }
-    .btn:hover{background:var(--secondary)}
-    footer{
-      background:#111827;
-      color:#9ca3af;
-      text-align:center;
-      padding:24px;
-      font-size:14px;
-    }
-    ul{padding-left:18px;margin-top:6px}
+    body{font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto;line-height:1.7;background:var(--bg);color:var(--text)}
+    header{background:linear-gradient(90deg,var(--primary),var(--secondary));color:white;padding:60px 24px;text-align:center}
+    header img{max-width:180px;margin-bottom:20px}
+    header h1{font-size:44px;margin-bottom:16px;font-weight:800}
+    header p{font-size:20px;color:#fce7d3;max-width:720px;margin:auto}
+    .container{max-width:1200px;margin:60px auto;padding:0 24px;}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:40px;margin-bottom:60px}
+    .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;margin-bottom:60px}
+    .card{background:var(--card);border-radius:16px;padding:36px;box-shadow:0 8px 28px rgba(0,0,0,0.08);transition:transform .2s;margin-bottom:60px}
+    .card:hover{transform:translateY(-6px)}
+    h2{margin-bottom:20px;color:var(--primary);font-size:26px;font-weight:700;display:flex;align-items:center;gap:10px}
+    h3{margin-bottom:14px;color:var(--secondary)}
+    .meta{background:#f0e4d3;padding:18px;border-radius:10px;display:flex;align-items:center;gap:10px;font-weight:500}
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:16px 28px;border-radius:10px;font-weight:600;text-decoration:none;transition:all .2s ease;margin-top:20px}
+    .btn:hover{background:#c99763}
+    footer{background:#3f2f25;color:#e5ded6;text-align:center;padding:36px;font-size:15px;margin-top:60px}
+    ul{padding-left:24px;margin-top:10px}
+    section{margin-bottom:60px}
+    .promo{background:var(--accent);color:#fff;border-radius:14px;padding:30px;text-align:center;box-shadow:0 8px 28px rgba(0,0,0,0.15);font-size:20px;font-weight:600}
   </style>
 </head>
 <body>
   <header>
     <img src="logo.jpg" alt="Logo Entre Copas y Contactos" />
-    <h1>Entre Copas y Contactos</h1>
-    <p>Networking Profesional en un Ambiente Distendido</p>
+    <h1>🍷 Entre Copas y Contactos 🍻</h1>
+    <p>✨ Un evento de networking que transforma el After Office en una experiencia profesional, cálida y cercana ✨</p>
   </header>
 
   <div class="container">
+    <section class="promo">🎉 ¡No te lo pierdas! Jueves 19 de septiembre en La Oficina Bar — Networking, música, cócteles y muchas oportunidades de conexión 🚀</section>
+
+    <div class="grid-2">
+      <section class="card">
+        <h2>📖 Introducción</h2>
+        <p>“Entre Copas y Contactos” convierte el After Office en un espacio estratégico para crear vínculos profesionales. En La Oficina Bar, el ambiente cálido y auténtico sirve como escenario perfecto para emprendedores, empresarios y creativos que buscan ampliar su red de contactos.</p>
+      </section>
+
+      <section class="card">
+        <h2>🎯 Objetivos</h2>
+        <ul>
+          <li>🤝 Promover networking en un ambiente relajado.</li>
+          <li>🌐 Ampliar redes de contacto en la comunidad local.</li>
+          <li>🏆 Posicionar a La Oficina Bar como punto de encuentro profesional.</li>
+          <li>🍺 Impulsar integración y consumo responsable.</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="grid-3">
+      <section class="card">
+        <h2>🏢 La Empresa</h2>
+        <p><strong>La Oficina Bar</strong> en Engativá, Bogotá, ofrece bebidas, música y bolirana en un ambiente relajado y divertido.</p>
+      </section>
+
+      <section class="card">
+        <h2>👥 Público Objetivo</h2>
+        <p>Emprendedores, empresarios, freelancers y creativos mayores de edad que busquen ampliar su red de contactos en un espacio profesional.</p>
+      </section>
+
+      <section class="card">
+        <h2>💡 Valores</h2>
+        <ul>
+          <li>😊 Amabilidad</li>
+          <li>🎶 Tradición</li>
+          <li>🥳 Diversión</li>
+          <li>🤝 Respeto</li>
+          <li>🔥 Compromiso</li>
+        </ul>
+      </section>
+    </div>
+
     <section class="card">
-      <h2>Sobre el evento</h2>
-      <p>“Entre Copas y Contactos” es una iniciativa diseñada para transformar el networking tradicional en una experiencia más cercana, profesional y a la vez amena. Reúne a emprendedores, freelancers, startups y creativos en un entorno relajado que fomenta la colaboración y la construcción de relaciones de valor.</p>
-      <div class="grid" style="margin-top:20px">
-        <div class="meta">
-          <strong>📅 Fecha</strong>
-          <div>Jueves 19 de septiembre</div>
-        </div>
-        <div class="meta">
-          <strong>⏰ Hora</strong>
-          <div>6:00 pm – 10:00 pm</div>
-        </div>
-        <div class="meta">
-          <strong>📍 Lugar</strong>
-          <div>La Oficina Bar — Dirección por confirmar</div>
-        </div>
-        <div class="meta">
-          <strong>🎟 Entrada</strong>
-          <div>Acceso libre con promociones especiales en bebidas</div>
-        </div>
+      <h2>📅 Detalles del Evento</h2>
+      <div class="grid-3">
+        <div class="meta">📆 Jueves 19 de septiembre</div>
+        <div class="meta">⏰ 6:00 pm – 10:00 pm</div>
+        <div class="meta">📍 La Oficina Bar, Engativá</div>
+        <div class="meta">🎟 Entrada: $20,000 COP</div>
       </div>
     </section>
 
     <section class="card">
-      <h2>Agenda y Dinámica</h2>
-      <ul>
-        <li>Bienvenida con cóctel y acreditación de participantes.</li>
-        <li>Speed Networking: rondas rápidas de presentación profesional.</li>
-        <li>Icebreakers diseñados para facilitar conversaciones.</li>
-        <li>Mesas temáticas por sectores de interés.</li>
-        <li>Espacios libres para networking informal y alianzas estratégicas.</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>Beneficios</h2>
-      <div class="grid">
+      <h2>💰 Presupuesto y Recursos</h2>
+      <div class="grid-3">
         <div>
-          <h4>Para asistentes</h4>
+          <h3>🎨 Decoración & Materiales</h3>
           <ul>
-            <li>Ampliar red de contactos de forma eficiente.</li>
-            <li>Visibilidad de proyectos y servicios.</li>
-            <li>Ambiente profesional y relajado.</li>
+            <li>✨ Decoración: $100k – $300k COP</li>
+            <li>📝 Materiales networking: $150k – $300k COP</li>
           </ul>
         </div>
         <div>
-          <h4>Para el bar anfitrión</h4>
+          <h3>🍹 Bebidas & Comida</h3>
           <ul>
-            <li>Aumento de flujo en horario after office.</li>
-            <li>Posicionamiento como punto de encuentro profesional.</li>
-            <li>Oportunidades de patrocinio y fidelización.</li>
+            <li>🍸 Cócteles: $10k – $15k</li>
+            <li>🍺 Cerveza: $4k – $8k</li>
+            <li>🥪 Snacks: $3k – $7k</li>
+          </ul>
+        </div>
+        <div>
+          <h3>📢 Publicidad & Personal</h3>
+          <ul>
+            <li>📱 Publicidad digital: $100k – $200k</li>
+            <li>💵 Caja: $100k – $150k</li>
+            <li>🧑‍🍳 Meseros: $80k – $120k</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="card">
-      <h2>Contacto</h2>
-      <p>¿Deseas asistir, reservar espacios para tu equipo o explorar opciones de patrocinio?</p>
-      <a class="btn" href="mailto:organizador@laoficina.bar?subject=RSVP%20Entre%20Copas%20y%20Contactos">Confirma tu asistencia</a>
-      <p style="margin-top:12px;font-size:15px">Escríbenos a <a href="mailto:organizador@laoficina.bar">organizador@laoficina.bar</a></p>
+    <section class="promo">🚨 ¡Cupos limitados! Regístrate pronto y asegura tu lugar en la experiencia de networking más esperada del año 🍷🤝</section>
+
+    <section class="card" style="text-align:center">
+      <h2>📩 Contacto</h2>
+      <p>¿Deseas asistir, reservar espacios o explorar patrocinio?</p>
+      <a class="btn" href="mailto:organizador@laoficina.bar">👉 Confirma tu asistencia</a>
     </section>
   </div>
 
